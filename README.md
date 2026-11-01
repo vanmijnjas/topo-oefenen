@@ -4,17 +4,17 @@ Een kleine browserapp om de provincies en steden van Nederland te oefenen.
 
 ## Starten
 
-Start vanuit deze projectmap een lokale webserver, bijvoorbeeld:
+Start vanuit de hoofdmap van dit project een lokale webserver, bijvoorbeeld:
 
 ```sh
-python -m http.server 8000
+python -m http.server 8000 --directory site
 ```
 
 Open daarna [http://localhost:8000](http://localhost:8000) in je browser. Een lokale webserver is nodig om het JSON-oefenbestand te laden.
 
 ## Oefenstof aanpassen
 
-Bewerk [`data/plaatsen.json`](data/plaatsen.json). Voeg provincies toe met hun hoofdstad en steden met de provincie waar ze bij horen:
+Bewerk [`site/data/plaatsen.json`](site/data/plaatsen.json). Voeg provincies toe met hun hoofdstad en steden met de provincie waar ze bij horen:
 
 ```json
 {
@@ -40,9 +40,12 @@ Kies **Alles door elkaar** om beide soorten vragen af te wisselen. Na het aanpas
 
 ## Publiceren met GitHub Pages
 
-De app is een statische website en kan rechtstreeks op GitHub Pages draaien:
+De websitebestanden staan in de map `site`. GitHub Actions publiceert die map automatisch naar GitHub Pages wanneer je een wijziging naar de branch `main` stuurt.
 
-1. Open de repository op GitHub en ga naar **Settings → Pages**.
-2. Kies bij **Build and deployment** voor **Deploy from a branch**.
-3. Kies de branch met de app en de map **/ (root)**, en sla op.
-4. Open de website-URL die GitHub Pages toont.
+Stel dit eenmalig in op GitHub:
+
+1. Open de repository en ga naar **Settings → Pages**.
+2. Kies bij **Build and deployment → Source** voor **GitHub Actions**.
+3. Sla de instelling op. De workflow publiceert de website bij de eerstvolgende wijziging op `main`.
+
+Je kunt de voortgang bekijken via het tabblad **Actions**. Daar staat ook de website-URL zodra de publicatie klaar is.
