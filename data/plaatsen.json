@@ -1,0 +1,30 @@
+{
+  "provinces": [
+    { "name": "Drenthe", "capital": "Assen" },
+    { "name": "Flevoland", "capital": "Lelystad" },
+    { "name": "Friesland", "capital": "Leeuwarden" },
+    { "name": "Gelderland", "capital": "Arnhem" },
+    { "name": "Groningen", "capital": "Groningen" },
+    { "name": "Limburg", "capital": "Maastricht" },
+    { "name": "Noord-Brabant", "capital": "'s-Hertogenbosch" },
+    { "name": "Noord-Holland", "capital": "Haarlem" },
+    { "name": "Overijssel", "capital": "Zwolle" },
+    { "name": "Utrecht", "capital": "Utrecht" },
+    { "name": "Zeeland", "capital": "Middelburg" },
+    { "name": "Zuid-Holland", "capital": "Den Haag" }
+  ],
+  "cities": [
+    { "name": "Emmen", "province": "Drenthe" },
+    { "name": "Almere", "province": "Flevoland" },
+    { "name": "Drachten", "province": "Friesland" },
+    { "name": "Nijmegen", "province": "Gelderland" },
+    { "name": "Appingedam", "province": "Groningen" },
+    { "name": "Venlo", "province": "Limburg" },
+    { "name": "Tilburg", "province": "Noord-Brabant" },
+    { "name": "Zaanstad", "province": "Noord-Holland" },
+    { "name": "Deventer", "province": "Overijssel" },
+    { "name": "Amersfoort", "province": "Utrecht" },
+    { "name": "Vlissingen", "province": "Zeeland" },
+    { "name": "Rotterdam", "province": "Zuid-Holland" }
+  ]
+}
